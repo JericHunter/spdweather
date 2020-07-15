@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+
+            <meta charset="utf-8">
+            <title> Take Home Weather</title>
+            <link rel="stylesheet" href="{{ url_for('static', filename="styles/style.css")}}">
+
+    </head>
+
+    <body>
+
+            <h1>Mood Weather</h1>
+
+            <!-- form at the top -->
+            <form action="/weather">
+
+                <input class="searchbar" type="text" name="q" placeholder="Search Mood..">
+
+                <input class="submitbutton" type="submit" value=" Enter ">
+            </form>
+            {% block body %} {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
